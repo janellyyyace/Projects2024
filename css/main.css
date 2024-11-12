@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    font-size: 80%;
+}
+
+/*General Styles*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    line-height: 2;
+    margin: 0.5;
+    padding: 0;
+    background-color: #d60270;
+    color: white;
+}
+
+/*Header*/
+header {
+    background-color: #9b4f96;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/*Navigation*/
+nav ul {
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    border-radius: 5px;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
+/*Container for Main and Aside*/
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/*Main Content*/
+main {
+    flex: 3;
+    background-color: #d60270;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* Aside - Sidebar */
+aside {
+    flex: 1;
+    background-color: #d60270;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Figure */
+figure {
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 0.5em 1em 0.5em;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+figure p {
+    text-align: center;
+}
+
+figure figcaption {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: pink;
+    color: #9b4f96;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (width <= 768px) {
+   .container {
+    flex-direction: column;
+   } 
+}
+
+/*Table*/
+table, th, td {
+    padding: 15px;
+    border-collapse: collapse;
+    background-color: #9b4f96;
+    border-radius: 15px;
+}
+
+/*Links*/
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: pink;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
