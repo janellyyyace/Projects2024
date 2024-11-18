@@ -30,7 +30,20 @@ function rollDice(){
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 document.getElementById("copyright").innerHTML = `Copyright ${currentYear} janellyyyace. All rights reserved.`;
-console.log("Youe see me! Yey. This is Janel.");
+console.log("You see me! Yey. This is Janel.");
 console.log("Today's date is:", currentDate.toString());
 
+ // Loops Assignment
+ const olList = document.getElementById("numbers");
+ if (olList) {
+    for (let i = 1; i <= 12; i++) {
+       const listItem = document.createElement("li");
+
+       // Show if the number is odd or even
+       listItem.textContent = i % 2 === 0 ? "even" : "odd";
+       listItem.classList.add(i % 2 === 0 ? "even" : "odd");
+
+       olList.appendChild(listItem);
+    }
+ }
 
