@@ -1,6 +1,21 @@
 console.log(`November 17, 2024`)
 
+   // Greeting 
+   const currentHour = new Date().getHours();
+   const greetingElement = document.getElementById("greeting");
 
+   if (greetingElement) {
+      if (currentHour < 12) {
+         greetingElement.textContent = "Good morning! Have a great rest of your day!";
+         greetingElement.classList.add("morning");
+      } else if (currentHour < 17) {
+         greetingElement.textContent = "Good afternoon! Hope your day is going well!";
+         greetingElement.classList.add("afternoon");
+      } else {
+         greetingElement.textContent = "Good evening! Looking forward to tomorrow!";
+         greetingElement.classList.add("evening");
+      }
+   }
 
 // Dice Roller
 
@@ -26,6 +41,7 @@ function rollDice(){
 }
 
 // Footer
+
 // Get the current date
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();

@@ -142,3 +142,16 @@ figure figcaption {
     font-style: italic;
     text-align: right;
 }
+
+/*Greetings*/
+#greeting.morning {
+    color: #fbf65d;
+ }
+ 
+ #greeting.afternoon {
+    color: #f06856;
+ }
+ 
+ #greeting.evening {
+    color: #4d3417;
+ }
