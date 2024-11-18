@@ -1,0 +1,149 @@
+/*Main Styling*/
+body {
+    font-family: 'Helvetica', Verdana, Geneva, Tahoma, sans-serif, monospace;
+    margin: 0px;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Header*/
+h1{
+    text-align: center;
+    color: #d60270;
+    margin: 10px;
+}
+
+/*Navigation*/
+.navbar{
+    background-color: #d60270;
+}
+
+.navbar ul{
+    list-style: none;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+
+}
+
+.navbar a{
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.navbar a:hover{
+    background-color: #eb84b9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #d60270;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/*Home Page Styling8/
+
+/*Dice Roller*/
+#container{
+    font-family: 'Helvetica', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #d60270;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #eb84b9;
+}
+
+button:active{
+    background-color:hsl(314, 53%, 86%);
+}
+
+input{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    width: 150px;
+    margin: 15px;
+}
+
+#diceResult{
+    margin: 25px;
+}
+
+#dicePics img{
+    width: 150px;
+    margin: 15px;
+}
+
+
+/*About Page Styling*/
+
+h2{
+    text-align: center;
+    color: #d60270;
+    margin: 75px;
+}
+
+h3{
+    text-align: left;
+    color: #d60270;
+    margin: 10px;
+}
+
+/*Table*/
+table, th, td {
+    padding: 15px;
+    color: white;
+    background-color: #9b4f96;
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+/* Projects Page Styling */
+figure {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 0.5em 1em 0.5em;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+figure figcaption {
+    font-size: 0.5em;
+    font-style: italic;
+    text-align: right;
+}

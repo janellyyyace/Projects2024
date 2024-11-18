@@ -4,76 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2024 Projects | janellyyyace</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-    <h1 align="center">Hi 👋, I'm Janel!</h1>
-    <h2> An Interactive Design - Major in Graphic Design </strong> student at the <a href="https://sait.ca" target="_blank">Southern Alberta Institute of Technology</a></h2>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="./projects/index.html">Projects</a></li>
-            <li><a href="./contact/index.html">Contact</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>
-        <!-- about me section -->
-        <section>
-            <h3>ABOUT ME</h3>
-            <p>😄 <strong>Pronouns:</strong> she/her/hers</p>
-            <p>🔭 I’m currently working on making <a href="https://andiesanade.itch.io/merchants-and-monsters" target="_blank">games</a> with my partner <a href="https://x.com/AndieSanade" target="_blank">@AndieSanade</a>
-            </p>
-            <p>⚡ <strong>Fun Fact:</strong> I like playing tabletop role-playing games! I've been playing TTRPGs for almost 5 years now. Here's a list of games that I've played:</p>
-                 <!-- unordered list -->
-                <ul>
-                    <li>Dungeons and Dragons - <em>5th Edition</em></li>
-                    <li>You Awaken in a Strange Place</li>
-                    <li><a href="https://andiesanade.itch.io/danger-death-detectives" target="_blank">Danger Death Detectives!</a></li>
-                    <li>Monster of the Week</li>
-                    <li><a href="https://andiesanade.itch.io/impulse-and-control" target="_blank">Impulse & Control</a></li>
-                    <li>Candela Obscura</li>
-                    <li>Kids on Brooms</li>
-                    <li>Kids on Bikes</li>
-                    <li>Savage Worlds</li>
-                    <li>Delta Green</li>
-                    <li>Vaesen</li>
-                 </ul>
-          </section>
 
-                  <!-- software section -->
-                  <section>
-                    <h3>TOOLS</h3>
-                        <table>
-                            <tr>
-                                <th>Photo Editing</th>
-                                <th>Video Editing</th>
-                                <th>Layout</th>
-                            </tr>
-                            <tr align="center">
-                                <td>Adobe Photoshop</td>
-                                <td>Adobe Premiere Pro</td>
-                                <td>Canva</td>
-                            </tr>
-                            <tr align="center">
-                                <td>Adobe Lightroom</td>
-                                <td>DaVinci Resolve Studio</td>
-                                <td>Adobe Illustrator</td>
-                            </tr>
-                        </table>
-                  </section>
-                  
-        <section>
-            <!-- projects section, redirects to project page -->
-            <h3>PROJECTS</h3>
-            <p>I've been a freelance graphic designer since 2022. <a href="./projects/index.html">Check out some of the things I've worked on!</a></p>
-          </section>
-          <footer>
-            <p>Follow me on all social media @janellyyyace!</p>
-          </footer>
-    </main>   
+
+    <header>
+
+    <h1 align="center">janellyyyace</h1>
+
+        <!-- navigation -->
+        <nav class = "navbar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/projects.html">Projects</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <!-- dice roller -->
+    <div id="container">
+        <h2>Are you feeling lucky today?</h2>
+        <p>Roll a d20 below!</p>
+        <label>Number of Dice:</label>
+        <input type="number" id="numOfDice" value="1" min="1">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="dicePics"></div>
+    </div>
+
+    <script src="./js/interact.js"></script>
+    
+    <!-- footer -->
+    <footer>
+        <p class="copyright">
+            &copy; janelllyyyace <span id=""currentyr"></span>. All rights reserved.
+            </p>
+      </footer>
+    
+    <script>
+        window.addEventListener(`load`, () => {
+            const year = document.getElementById(`currentyr`);
+            year.innerHTML = new Date ().getFullYear();
+        }) ;
+    </script>
+
 </body>
 </html>
 
