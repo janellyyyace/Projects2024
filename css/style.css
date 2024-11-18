@@ -44,18 +44,14 @@ h1{
 }
 
 /* Footer */
+
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #d60270;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: x-large;
-    font-weight: bold;
-    border-radius: 5px;
-}
+    color: #d60270;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: right;
+ }
+
 
 
 /*Home Page Styling8/
@@ -103,7 +99,6 @@ input{
     width: 150px;
     margin: 15px;
 }
-
 
 /*About Page Styling*/
 

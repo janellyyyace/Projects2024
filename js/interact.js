@@ -1,8 +1,5 @@
 console.log(`November 17, 2024`)
 
-//Page Pop-Up
-window.alert(`Welcome to my website`)
-window.alert(`Thanks for checking it out!`)
 
 
 // Dice Roller
@@ -27,3 +24,13 @@ function rollDice(){
     diceResult.textContent = `Dice: ${values.join(' | ')}`;
     diceImages.innerHTML = images.join('');
 }
+
+// Footer
+// Get the current date
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+document.getElementById("copyright").innerHTML = `Copyright ${currentYear} janellyyyace. All rights reserved.`;
+console.log("Youe see me! Yey. This is Janel.");
+console.log("Today's date is:", currentDate.toString());
+
+
